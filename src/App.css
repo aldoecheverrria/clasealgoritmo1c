@@ -95,6 +95,89 @@ h3 {
   position: relative;
 }
 
+.link-block span:before,
+.link-block span:after {
+  width: 80px;
+  height: 1px;
+  content: "";
+  display: block;
+  background: #000;
+  left: 50%;
+  margin-left: -40px;
+  position: absolute;
+}
+
+.link-block span:before {
+  top: 8px;
+}
+
+.link-block span:after {
+  bottom: 8px;
+}
+
+.text {
+  line-height: 1.4;
+}
+
+.text-block {
+  font-size: 6.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text-block span {
+  color: #fff;
+}
+
+.title-block {
+  text-transform: uppercase;
+  font-size: 13vw;
+}
+
+.title-tag {
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
+.title-small {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+}
+.btn {
+  display: block;
+  text-align: center;
+  border: 2px solid #000;
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.bg-block {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/25091/paris.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: 20px solid #333;
+  display: flex;
+}
+
+.bg-block__wrapper {
+  padding: 20px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article-header .title-block,
+.article-header .title-tag {
+  text-align: center;
+}
+
 @media (min-width: 750px) {
   .grid {
     grid-template-rows: auto;
